@@ -156,20 +156,3 @@ User -. Transfer Acceleration (AWS Edge Network) .-> S3
 
 ---
 
-## What is now fixed (important)
-
-- S3 access from EC2 **uses VPC Endpoint (correct)**
-- NAT Gateway is only for general outbound internet traffic
-- Transfer Acceleration is correctly modeled as **external client → S3 via edge network**
-- CloudFront is not incorrectly mixed into S3 internal architecture
-- Clear separation between:
-  - Compute layer
-  - Data layer
-  - Edge access paths
-
----
-
-If you want next level improvement, I can:
-- turn this into a **resume-ready architecture diagram**
-- or convert it into a **real AWS diagram style (icon-based)**
-- or optimize it for **Solutions Architect exam answers**
